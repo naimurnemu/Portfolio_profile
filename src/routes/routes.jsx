@@ -1,35 +1,10 @@
-import { Route, Routes, createBrowserRouter } from "react-router-dom";
+import React from "react";
+import { Route, Routes} from "react-router-dom";
+import withRouter from "../hooks/withRouter"
 import { About, Blogs, Contact, Home, Portfolio } from "../pages";
-import { NotFound, SocialProfiles } from "../components";
-import withRouter from "../hooks/withRouter";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-
-export const routes = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "about",
-    element: <About />,
-  },
-  {
-    path: "portfolio",
-    element: <Portfolio />,
-  },
-  {
-    path: "blogs",
-    element: <Blogs />,
-  },
-  {
-    path: "contact",
-    element: <Contact />,
-  },
-  {
-    path: "*",
-    element: <NotFound />,
-  },
-]);
+import { NotFound, SocialProfiles } from "../components";
+import "./AppRoutes.css";
 
 const AnimatedRoutes = withRouter(({ location }) => (
   <TransitionGroup>
@@ -54,13 +29,14 @@ const AnimatedRoutes = withRouter(({ location }) => (
   </TransitionGroup>
 ));
 
-function AppRoutes() {
+const AppRoutes = () => {
+
   return (
     <div className="s_c">
       <AnimatedRoutes />
       <SocialProfiles />
     </div>
   );
-}
+};
 
 export default AppRoutes;

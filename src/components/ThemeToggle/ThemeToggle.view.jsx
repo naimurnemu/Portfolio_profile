@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { WiMoonAltWaningCrescent4 } from "react-icons/wi";
+import "./ThemeToggle.css";
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme"));
@@ -14,10 +15,8 @@ const ThemeToggle = () => {
   };
 
   return (
-    <div className="nav_ac">
-      <button className="menu__button  nav_ac" onClick={themetoggle}>
+    <div className="nav_ac" onClick={themetoggle}>
         <WiMoonAltWaningCrescent4 />
-      </button>
     </div>
   );
 };

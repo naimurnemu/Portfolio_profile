@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Home.css"
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { SEOProvider } from '../../components';
 import Typewriter from "typewriter-effect";
@@ -16,12 +17,12 @@ const Home = () => {
         <div className="intro_sec d-block d-lg-flex align-items-center ">
           <div
             className="h_bg-image order-1 order-lg-2 h-100 "
-            style={{ backgroundImage: `url(https://images.unsplash.com/photo-1514790193030-c89d266d5a9d)` }}
+            style={{ backgroundImage: `url("https://images.unsplash.com/photo-1514790193030-c89d266d5a9d")` }}
           ></div>
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
               <div className="intro mx-auto">
-                <h2 className="mb-1x">I’m Naimur Rahman</h2>
+                <h2 className="mb-1x">I’m Naimur Rahman Hridoy</h2>
                 <h1 className="fluidz-48 mb-1x">
                   <Typewriter
                     options={{
@@ -40,7 +41,7 @@ const Home = () => {
                 <div className="intro_btn-action pb-5">
                   <Link to="/portfolio" className="text_2">
                     <div id="button_p" className="ac_btn btn ">
-                      My Portfolio
+                      Download Resume
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
