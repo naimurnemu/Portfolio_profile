@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { HelmetProvider } from 'react-helmet-async';
 import { services, skills, timeline } from './data';
+import "./About.css";
 
 const About = () => {
   return (

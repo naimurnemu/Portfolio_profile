@@ -18,7 +18,7 @@ const Header = () => {
     <>
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
-          <Link className="navbar-brand nav_ac" to="/">
+          <Link className="navbar-brand" to="/">
             <img className="header_logo" src={logo} alt="portfolio_logo" />
           </Link>
           <div className="d-flex align-items-center">
@@ -33,7 +33,7 @@ const Header = () => {
           <Menu handleToggle={handleToggle}/>
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
             <div className="d-flex">
-              <a href={SocialAccounts.facebook}>Facebook</a>
+              <a href={SocialAccounts.facebook}>Linked In</a>
               <a href={SocialAccounts.github}>Github</a>
               <a href={SocialAccounts.twitter}>Twitter</a>
             </div>
