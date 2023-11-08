@@ -33,9 +33,9 @@ const Header = () => {
           <Menu handleToggle={handleToggle}/>
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
             <div className="d-flex">
-              <a href={SocialAccounts.facebook}>Linked In</a>
-              <a href={SocialAccounts.github}>Github</a>
-              <a href={SocialAccounts.twitter}>Twitter</a>
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/naimurnemu/">Linked In</a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/naimurnemu">Github</a>
+              <a target="_blank" rel="noreferrer" href="https://twitter.com/naimurnemu">Twitter</a>
             </div>
             <p className="copyright m-0">Copyright &#169; {CurrentYear} {logotext}</p>
           </div>

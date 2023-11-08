@@ -3,10 +3,8 @@ import { SocialAccounts } from '../Header/data';
 import {
   FaGithub,
   FaTwitter,
-  FaFacebookF,
   FaLinkedin,
-  FaYoutube,
-  FaTwitch,
+  FaDiscord
 } from "react-icons/fa";
 import "./SocialProfiles.css"
 
@@ -14,48 +12,27 @@ const SocialProfiles = () => {
   return (
     <div className="stick_follow_icon">
       <ul>
-        {/* {SocialAccounts.twitter && ( */}
-          <li>
-            <a href={SocialAccounts.twitter}>
-              <FaTwitter />
-            </a>
-          </li>
-        {/* )} */}
-        {/* {SocialAccounts.github && ( */}
-          <li>
-            <a href={SocialAccounts.github}>
-              <FaGithub />
-            </a>
-          </li>
-        {/* )} */}
-        {/* {SocialAccounts.facebook && ( */}
-          <li>
-            <a href={SocialAccounts.facebook}>
-              <FaFacebookF />
-            </a>
-          </li>
-        {/* )} */}
-        {/* {SocialAccounts.linkedin && ( */}
-          <li>
-            <a href={SocialAccounts.linkedin}>
-              <FaLinkedin />
-            </a>
-          </li>
-        {/* )} */}
-        {/* {SocialAccounts.youtube && ( */}
-          <li>
-            <a href={SocialAccounts.youtube}>
-              <FaYoutube />
-            </a>
-          </li>
-        {/* )} */}
-        {/* {SocialAccounts.twitch && ( */}
-          <li>
-            <a href={SocialAccounts.twitch}>
-              <FaTwitch />
-            </a>
-          </li>
-        {/* )} */}
+        <li>
+          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/naimurnemu/">
+            <FaLinkedin />
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noreferrer" href="https://github.com/naimurnemu">
+            <FaGithub />
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noreferrer" href="https://twitter.com/naimurnemu">
+            <FaTwitter />
+          </a>
+        </li>
+
+        <li>
+          <a target="_blank" rel="noreferrer" href="https://discord.com/users/_naimurrahman">
+            <FaDiscord />
+          </a>
+        </li>
       </ul>
       <p>Reach Me On&nbsp;</p>
     </div>

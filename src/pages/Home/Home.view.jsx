@@ -17,29 +17,34 @@ const Home = () => {
           <div className="text order-1 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
               <div className="intro mx-auto">
-                <h2 className="mb-1x">I’m Naimur Rahman Hridoy</h2>
-                <h1 className="fluidz-48 mb-1x">
+                <h2 className="mb-1x">I’m known as <br />Md. Naimur Rahman Hridoy</h2>
+                <h4 className="fluidz-48 mb-1x mt-2 mb-4 text-warning">
                   <Typewriter
                     options={{
                       strings: [
-                        "I love coding",
-                        "I code cool websites",
-                        "I develop mobile apps",
+                        "JavaScript Programmer",
+                        "Front-End Engineer",
+                        "MERN Stack Developer",
                       ],
                       autoStart: true,
                       loop: true,
                       deleteSpeed: 10,
                     }}
                   />
-                </h1>
-                <p className="mb-1x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum</p>
+                </h4>
+                <p style={{ textAlign: "justify" }} className="mb-1x mb-5">
+                  Experiences in developing various types of single-page applications with responsive and scalable designs also ensuring optimal performance.<br /><br />
+                  Passionate about cutting-edge, pixel-perfect, beautiful UI and intuitively implemented UX.
+                </p>
                 <div className="intro_btn-action pb-5">
-                  <div id="button_p" className="ac_btn btn ">
-                    Download Resume
-                    <div className="ring one"></div>
-                    <div className="ring two"></div>
-                    <div className="ring three"></div>
-                  </div>
+                  <a type="button" href="./Resume.pdf" download>
+                    <div id="button_p" className="ac_btn btn">
+                      Download Resume
+                      <div className="ring one"></div>
+                      <div className="ring two"></div>
+                      <div className="ring three"></div>
+                    </div>
+                  </a>
                   <Link to="/contact">
                     <div id="button_h" className="ac_btn btn">
                       Contact Me

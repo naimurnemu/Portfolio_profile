@@ -2,8 +2,13 @@ import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { SEOProvider } from '../../components';
 import { HelmetProvider } from 'react-helmet-async';
-import { Alert, Col, Container, Row } from 'react-bootstrap';
-import "./Contact.css"
+import { Alert, Button, Col, Container, Form, Row } from 'react-bootstrap';
+import "./Contact.css";
+import { MdEmail } from "react-icons/md";
+import { BsTelephonePlusFill } from "react-icons/bs";
+import { HiLocationMarker } from "react-icons/hi";
+import { GiPostOffice } from "react-icons/gi";
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -72,99 +77,118 @@ const Contact = () => {
   };
   return (
     <HelmetProvider>
-    <Container>
-      <SEOProvider />
-      <Row className="mb-5 mt-3 pt-md-3">
-        <Col lg="8">
-          <h1 className="display-4 mb-4">Contact Me</h1>
-          <hr className="t_border my-4 ml-0 text-left" />
-        </Col>
-      </Row>
-      <Row className="sec_sp">
-        <Col lg="12">
-          <Alert
-            //show={formData.show}
-            variant={formData.variant}
-            className={`rounded-0 co_alert ${
-              formData.show ? "d-block" : "d-none"
-            }`}
-            onClose={() => setFormData({ show: false })}
-            dismissible
-          >
-            <p className="my-0">{formData.alertmessage}</p>
-          </Alert>
-        </Col>
-        <Col lg="5" className="mb-5">
-          <h3 className="color_sec py-4">Get in touch</h3>
-          <address>
-            <strong>Email:</strong>{" "}
-            <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
-              naimurrahaman82@gmail.com
-            </a>
-            <br />
-            <br />
-            {contactConfig.hasOwnProperty("YOUR_FONE") ? (
-              <p>
-                <strong>Phone:</strong> {contactConfig.YOUR_FONE}
-              </p>
-            ) : (
-              ""
-            )}
-          </address>
-          <p>{contactConfig.description}</p>
-        </Col>
-        <Col lg="7" className="d-flex align-items-center">
-          <form onSubmit={handleSubmit} className="contact__form w-100">
-            <Row>
-              <Col lg="6" className="form-group">
-                <input
-                  className="form-control"
-                  id="name"
-                  name="name"
-                  placeholder="Name"
-                  value={formData.name || ""}
-                  type="text"
-                  required
-                  onChange={handleChange}
-                />
-              </Col>
-              <Col lg="6" className="form-group">
-                <input
-                  className="form-control rounded-0"
-                  id="email"
-                  name="email"
-                  placeholder="Email"
-                  type="email"
-                  value={formData.email || ""}
-                  required
-                  onChange={handleChange}
-                />
-              </Col>
-            </Row>
-            <textarea
-              className="form-control rounded-0"
-              id="message"
-              name="message"
-              placeholder="Message"
-              rows="5"
-              value={formData.message}
-              onChange={handleChange}
-              required
-            ></textarea>
-            <br />
-            <Row>
-              <Col lg="12" className="form-group">
-                <button className="btn ac_btn" type="submit">
-                  {formData.loading ? "Sending..." : "Send"}
-                </button>
-              </Col>
-            </Row>
-          </form>
-        </Col>
-      </Row>
-    </Container>
-    <div className={formData.loading ? "loading-bar" : "d-none"}></div>
-  </HelmetProvider>
+      <Container>
+        <SEOProvider />
+        <div className="footer-bg">
+          <div className="container">
+            <div className="row g-4">
+              <div className="py-5 pt-5 pb-5 pb-0 col-sm-12 col-md-8 text-md-start order-1">
+                <h1 className="fw-medium">
+                  Let's <span className="text-danger">talk</span>
+                </h1>
+                <h6 className="text-secondary">
+                  Please feel free to reach out by utilizing the contact form provided below.
+                </h6>
+                <Form className="mt-4 contact__form" onSubmit={handleSubmit}>
+                  <Form.Group className="mb-3">
+                    <Form.Label>Your Name</Form.Label>
+                    <Form.Control
+                      className="bg-dark border-0 input_box"
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name || ""}
+                      placeholder="Enter Your Name"
+                      required
+                      onChange={handleChange}
+                      autoComplete="off"
+                    />
+                  </Form.Group>
+                  <Form.Group className="mb-3">
+                    <Form.Label>Email Address</Form.Label>
+                    <Form.Control
+                      className="bg-dark border-0 input_box"
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder="Enter Your Email"
+                      value={formData.email || ""}
+                      required
+                      onChange={handleChange}
+                      autoComplete="off"
+                    />
+                  </Form.Group>
+                  <Form.Group className="mb-3">
+                    <Form.Label>Message</Form.Label>
+                    <Form.Control
+                      className="bg-dark border-0 input_box p-3"
+                      id="message"
+                      name="message"
+                      placeholder="Enter Message"
+                      as="textarea"
+                      rows={4}
+                      value={formData.message}
+                      required
+                      onChange={handleChange}
+                      autoComplete="off"
+                    />
+                  </Form.Group>
+                  <div className='text-end'>
+                    <Button
+                      type="submit"
+                      variant="primary"
+                      size="lg"
+                      className="text-warningpx-3 py-2 px-5 rounded-1"
+                    >
+                      Send
+                    </Button>
+                  </div>
+                </Form>
+              </div>
+              <div className="col-sm-12 col-md-4 text-md-start px-2 px-md-5 pt-md-5 pt-0 align-self-start">
+                <div>
+                  <h1 className="fw-medium">
+                    Contact
+                  </h1>
+                  <div className="text-secondary ps-1">
+                    <p className="p-text pt-2"><MdEmail size={25} />&nbsp; naimurrahaman82@gmail.com</p>
+                    <p className="p-text"><BsTelephonePlusFill size={22} />&nbsp;&nbsp; 8801401254113</p>
+                  </div>
+                </div>
+                <div className="mt-5">
+                  <h1 className="fw-medium pt-md-5 pt-0">
+                    Based <span className="text-danger">in</span>
+                  </h1>
+                  <div className="text-secondary ps-2">
+                    <p className="p-text pt-3"><HiLocationMarker size={25} />&nbsp; Dhaka, Bangladesh</p>
+                    <p className="p-text d-flex align-items-center"><GiPostOffice size={22} />&nbsp;&nbsp; <span>Zipcode - 1902</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Row className="mb-5 mt-3 pt-md-3">
+          <Col lg="8">
+            <h1 className="display-4 mb-4">Contact Me</h1>
+            <hr className="t_border my-4 ml-0 text-left" />
+          </Col>
+        </Row>
+        <Row className="sec_sp">
+          <Col lg="12">
+            <Alert
+              variant={formData.variant}
+              className={`rounded-0 co_alert ${formData.show ? "d-block" : "d-none"}`}
+              onClose={() => setFormData({ show: false })}
+              dismissible
+            >
+              <p className="my-0">{formData.alertmessage}</p>
+            </Alert>
+          </Col>
+        </Row>
+      </Container>
+      <div className={formData.loading ? "loading-bar" : "d-none"}></div>
+    </HelmetProvider>
   );
 };
 
