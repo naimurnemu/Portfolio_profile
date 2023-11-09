@@ -17,7 +17,7 @@ const Home = () => {
           <div className="text order-1 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
               <div className="intro mx-auto">
-                <h2 className="mb-1x">I’m known as <br />Md. Naimur Rahman Hridoy</h2>
+                <h2 className="mb-1x">I’m known as <br />Naimur Rahman</h2>
                 <h4 className="fluidz-48 mb-1x mt-2 mb-4 text-warning">
                   <Typewriter
                     options={{
