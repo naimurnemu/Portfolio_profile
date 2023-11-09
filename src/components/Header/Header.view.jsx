@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import ThemeToggle from '../ThemeToggle';
-import { CurrentYear, SocialAccounts, logotext } from './data';
+import { CurrentYear, logotext } from './data';
 import "./Header.css"
 import logo from "../../assets/portfolio_logo.png"
 import Menu from './Menu.view';

@@ -1,5 +1,4 @@
 import React from 'react';
-import { SocialAccounts } from '../Header/data';
 import {
   FaGithub,
   FaTwitter,
@@ -27,7 +26,6 @@ const SocialProfiles = () => {
             <FaTwitter />
           </a>
         </li>
-
         <li>
           <a target="_blank" rel="noreferrer" href="https://discord.com/users/_naimurrahman">
             <FaDiscord />
