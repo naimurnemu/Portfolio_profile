@@ -37,7 +37,7 @@ const Home = () => {
                   Passionate about cutting-edge, pixel-perfect, beautiful UI and intuitively implemented UX.
                 </p>
                 <div className="intro_btn-action pb-5">
-                  <a type="button" href="./Resume.pdf" download>
+                  <a href="./resume.pdf" download="Naimur's Resume.pdf">
                     <div id="button_p" className="ac_btn btn">
                       Download Resume
                       <div className="ring one"></div>

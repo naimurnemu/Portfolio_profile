@@ -22,7 +22,6 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />}>
           <Route index element={<Aboutme />} />
-          <Route path="intro" element={<Aboutme />} />
           <Route path="academic" element={<Academic />} />
           <Route path="skills" element={<Skills />} />
           <Route path="experinces" element={<Experinces />} />
