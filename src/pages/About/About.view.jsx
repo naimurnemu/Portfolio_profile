@@ -11,18 +11,20 @@ const About = () => {
   const navigate = useNavigate();
 
   const handleNavigate = (path) => {
-    navigate(path)
+    navigate(path);
   }
+
+  console.log(pathname === "/about");
   return (
     <HelmetProvider>
       <Container className="About-header">
-        <SEOProvider />
+        <SEOProvider title="About" />
         <Row>
           <Navbar className="mt-2" fixed="top" bg="transparent" data-bs-theme="primary">
             <Container className="mt-5 animate__animated animate__bounce animate__delay-0.5s ">
               <Nav className="me-auto mt-2 d-flex flex-wrap">
                 <Nav.Link
-                  className={`text-primary fs-md-4 border ${pathname === "/about/intro" ? "bg-primary text-light" : "border-primary fw-semibold"} my-1 me-3 rounded-pill px-3`}
+                  className={`text-primary fs-md-4 border ${(pathname === "/about/intro" || pathname === "/about") ? "bg-primary text-light" : "border-primary fw-semibold"} my-1 me-3 rounded-pill px-3`}
                   onClick={() => handleNavigate("/about/intro")}
                 >
                   About

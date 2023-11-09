@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import withRouter from "../hooks/withRouter"
 import { About, Blogs, Contact, Home, Portfolio } from "../pages";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
@@ -21,10 +21,11 @@ const AnimatedRoutes = withRouter(({ location }) => (
       <Routes location={location}>
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />}>
-          <Route path="intro" element={<Aboutme />} /> 
-          <Route path="academic" element={<Academic />} /> 
-          <Route path="skills" element={<Skills />} /> 
-          <Route path="experinces" element={<Experinces />} /> 
+          <Route index element={<Aboutme />} />
+          <Route path="intro" element={<Aboutme />} />
+          <Route path="academic" element={<Academic />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="experinces" element={<Experinces />} />
         </Route>
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />

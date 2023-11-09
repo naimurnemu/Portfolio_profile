@@ -78,7 +78,7 @@ const Contact = () => {
   return (
     <HelmetProvider>
       <Container>
-        <SEOProvider />
+        <SEOProvider title="Contact" />
         <div className="footer-bg">
           <div className="container">
             <div className="row g-4">

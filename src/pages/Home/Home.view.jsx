@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <HelmetProvider>
       <section id="home" className="home">
-        <SEOProvider />
+        <SEOProvider title="Welcome" />
         <Helmet>
           <meta charSet="utf-8" />
         </Helmet>

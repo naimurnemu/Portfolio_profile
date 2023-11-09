@@ -1,10 +1,14 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { HelmetProvider } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import { SEOProvider } from '../../components';
 
 const Blogs = () => {
   return (
-    <div className="d-flex justify-content-center" style={{ width: "100%" }}>
+    <HelmetProvider>
+      <SEOProvider title="Blogs" />
+      <div className="d-flex justify-content-center" style={{ width: "100%" }}>
       <div className="text-center">
         <img
           className="img-fluid"
@@ -21,6 +25,8 @@ const Blogs = () => {
         </Link>
       </div>
     </div>
+    </HelmetProvider>
+    
   );
 };
 
