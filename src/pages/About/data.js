@@ -21,24 +21,36 @@ export const timeline = [
 
 export const skills = [
   {
-    name: "Python",
+    name: "ReactJS",
     value: 90,
   },
   {
-    name: "Djano",
+    name: "Material UI",
     value: 85,
   },
   {
-    name: "Javascript",
+    name: "React-Redux",
     value: 80,
   },
   {
-    name: "React",
+    name: "JavaScript",
+    value: 85,
+  },
+  {
+    name: "NodeJS",
     value: 60,
   },
   {
-    name: "Jquery",
-    value: 85,
+    name: "NextJS",
+    value: 45,
+  },
+  {
+    name: "TypeScript",
+    value: 30,
+  },
+  {
+    name: "MongoDB",
+    value: 40,
   },
 ];
 
