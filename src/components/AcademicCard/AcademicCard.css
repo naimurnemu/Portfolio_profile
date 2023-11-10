@@ -1,0 +1,7 @@
+.acd-box {
+  border: 1px solid var(--bg-color-2);
+  box-shadow: 3px 4px 12px rgba(104, 104, 104, 0.185);
+}
+.acd-box:hover {
+  background-color: var(--bg-color-2);
+}

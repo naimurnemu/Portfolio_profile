@@ -33,7 +33,7 @@ const Home = () => {
                   />
                 </h4>
                 <p style={{ textAlign: "justify" }} className="mb-1x mb-5">
-                  Experiences in developing various types of single-page applications with responsive and scalable designs also ensuring optimal performance.<br /><br />
+                  Experiences in developing various types of single-page applications with responsive and scalable designs also ensuring optimal performance.<br />
                   Passionate about cutting-edge, pixel-perfect, beautiful UI and intuitively implemented UX.
                 </p>
                 <div className="intro_btn-action pb-5">

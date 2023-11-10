@@ -8,7 +8,7 @@ const Skills = () => {
     <Row className="mt-5 sec_sp animate__animated animate__rotateInUpLeft animate__delay-0.5s">
       <Col lg="5">
         <h3 className="color_sec py-4">Skills</h3>
-        <div className="mt-2">
+        <div className="mt-2 d-none d-md-block">
           <img width={"100%"} height="auto" src={skillCover} alt="skill_cover" />
         </div>
       </Col>
