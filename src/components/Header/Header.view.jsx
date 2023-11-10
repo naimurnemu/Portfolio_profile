@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { VscGrabber, VscClose } from "react-icons/vsc";
+import { FiMenu } from 'react-icons/fi';
+import {RxExit} from "react-icons/rx";
 import ThemeToggle from '../ThemeToggle';
 import { CurrentYear, logotext } from './data';
 import "./Header.css"
@@ -24,13 +25,13 @@ const Header = () => {
           <div className="d-flex align-items-center">
             <ThemeToggle />
             <button className="menu__button  nav_ac" onClick={handleToggle}>
-              {!isActive ? <VscClose /> : <VscGrabber />}
+              {!isActive ? <RxExit /> : <FiMenu />}
             </button>
           </div>
         </div>
 
         <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
-          <Menu handleToggle={handleToggle}/>
+          <Menu handleToggle={handleToggle} />
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
             <div className="d-flex">
               <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/naimurnemu/">Linked In</a>

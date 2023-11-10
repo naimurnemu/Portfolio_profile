@@ -22,8 +22,8 @@
 }
 
 .menu__button svg {
-  width: 2em;
-  height: 2em;
+  width: 1.5rem;
+  height: 1.5rem;
   fill: var(--text-color);
   color: var(--text-color);
 }

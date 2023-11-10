@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { WiMoonAltWaningCrescent4 } from "react-icons/wi";
+import { FiMoon } from "react-icons/fi";
+import {LuSunMoon} from "react-icons/lu"
 import "./ThemeToggle.css";
 
 const ThemeToggle = () => {
@@ -15,11 +16,11 @@ const ThemeToggle = () => {
   };
 
   return (
-    <div >
-        <button className="nav_ac" onClick={themetoggle}>
-          <WiMoonAltWaningCrescent4 />
-        </button>
+    <div>
+      <button className="nav_ac" onClick={themetoggle}>
+      {theme === "light" ? (<FiMoon size={25} />) : (<LuSunMoon size={25} />)  }
         
+      </button>
     </div>
   );
 };

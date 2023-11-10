@@ -32,7 +32,7 @@ const SocialProfiles = () => {
           </a>
         </li>
       </ul>
-      <p>Reach Me On&nbsp;</p>
+      <p>Reach Me On</p>
     </div>
   );
 };
