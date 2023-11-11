@@ -105,6 +105,7 @@ section {
   background-position: center;
   min-height: 700px;
   position: relative;
+  
 }
 
 .ac_btn {
@@ -169,7 +170,6 @@ section {
 
 .ac_btn .three {
   background-color: var(--secondary-color);
-  z-index: -2;
   transition: all 0.7s cubic-bezier(0.55, 0, 0.1, 1);
   z-index: -3;
 }
@@ -238,6 +238,17 @@ section {
   color: var(--text-color)
 }
 
-.intro_sec .h_bg-image {
+.h_bg-image {
+  box-shadow:
+  inset 0.2em 2em 3em var(--bg-color),
+  0 0 0 2px var(--bg-color),
+  0.5em 1em 2em var(--bg-color-2);
+  filter: blur(1px);
+  transition: transform .8s;
+}
+
+.h_bg-image:hover {
+  filter: blur(0.5px);
   filter: saturate(0.5);
+  transform: scale(1.05);
 }

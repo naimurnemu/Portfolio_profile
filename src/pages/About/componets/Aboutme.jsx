@@ -12,8 +12,13 @@ const Aboutme = () => {
       </Col>
       <Col lg="7" className="d-flex align-items-start">
         <div>
-          <h3 className="color_sec pt-5 fs-4">
-            I'm MD. Naimur Rahman Hridoy, a passionate front-end focused MERN stack developer from Dhaka, Bangladesh.
+          <h3 className="color_sec pt-5 text-center fs-2 fw-semibold">
+            <small>I'm </small><br />
+            MD. Naimur Rahman Hridoy,
+            <br />
+            <small className="fs-6">a passionate web developer.</small>
+            
+            {/* from Dhaka, Bangladesh. */}
           </h3>
           <br />
           <p className="fs-5" style={{ textAlign: "justify" }}>

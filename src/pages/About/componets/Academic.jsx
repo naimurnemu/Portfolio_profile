@@ -17,7 +17,7 @@ const Academic = () => {
         <div className="pt-4" >
           <h5 className="service__title">Academic Qualification:</h5>
           <div>
-            {qualifications.map((item) => (
+            {qualifications.reverse().map((item) => (
               <AcademicCard {...item} key={item.academy} />
             ))}
           </div>
