@@ -155,8 +155,13 @@ const Contact = () => {
                     Contact
                   </h1>
                   <div className="text-secondary ps-1">
-                    <p className="p-text pt-2"><MdEmail size={25} />&nbsp;naimurrahaman82@gmail.com</p>
-                    <p className="p-text"><BsTelephonePlusFill size={22} />&nbsp;&nbsp; 8801401254113</p>
+                    <a style={{textDecoration: "none"}} href="mailto:naimurrahaman82@gmail.com">
+                      <p className="p-text pt-2"><MdEmail size={25} />&nbsp;naimurrahaman82@gmail.com</p>
+                    </a>
+                    <a target="_blank" rel="noreferrer" style={{textDecoration: "none"}} href="https://wa.me/8801401254113">
+                    <p className="p-text"><BsTelephonePlusFill size={22} />&nbsp;&nbsp;8801401254113</p>
+                    </a>
+                    
                   </div>
                 </div>
                 <div className="mt-5">
