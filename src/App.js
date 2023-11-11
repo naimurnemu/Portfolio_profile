@@ -6,7 +6,6 @@ import "./App.css";
 import { Header } from "./components";
 import AnimatedCursor from "./hooks/AnimatedCursor";
 import { ScrollToTop } from "./utils/ScrollToTop";
-// import AppRoutes from "./routes/AppRoutes";
 
 export default function App() {
   return (

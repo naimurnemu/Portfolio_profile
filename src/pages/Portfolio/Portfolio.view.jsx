@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import { Project, SEOProvider } from '../../components';
-import { Container, Nav, Row } from 'react-bootstrap';
+import { Button, Container, Nav, Row } from 'react-bootstrap';
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import { projects } from './data';
+import "./Portfolio.css";
 
 const buttons = ["All", "React", "MERN", "Redux"]
 
@@ -23,7 +25,7 @@ const Portfolio = () => {
       setContent(projects
         ?.filter((item) => item.filterKeys.includes("Redux"))
         ?.map((option) => (<Project key={option.id} {...option} />)))
-    }  else {
+    } else {
       setContent(projects?.map((option) => (<Project key={option.id} {...option} />)));
     }
 
@@ -31,7 +33,7 @@ const Portfolio = () => {
 
   return (
     <HelmetProvider>
-      <Container className="About-header">
+      <Container className="portfolio-con">
         <SEOProvider title="Portfolio" />
         <div className="pt-md-3">
           <Container className="animate__animated animate__backInRight animate__delay-0.5s">
@@ -50,9 +52,17 @@ const Portfolio = () => {
           <hr className="t_border my-2 ml-0 text-left" />
         </div>
         <div className="mb-5">
-          <Row className="justify-content-start align-items-stretch">
+          <Row className="justify-content-start align-items-stretch px-3 pb-5 g-5">
             {content}
           </Row>
+        </div>
+        <div className="scroll_box">
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className='rounded-pill scroll_btn'
+          >
+            <BsFillArrowUpCircleFill size={35} />
+          </button>
         </div>
       </Container>
     </HelmetProvider>

@@ -1,0 +1,21 @@
+.portfolio-con {
+  position: relative;
+}
+
+.scroll_box {
+  position: fixed;
+  bottom: 0;
+  right: 0;  
+  margin: 2rem;
+}
+
+.scroll_btn {
+  display: block;
+  border: 1px solid var(--bg-color-2);
+  cursor: pointer;
+  all: unset;
+}
+
+.scroll_btn:focus {
+  outline: revert;
+}
