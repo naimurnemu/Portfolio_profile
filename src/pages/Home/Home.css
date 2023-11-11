@@ -8,7 +8,8 @@ section {
 }
 
 .who_am_I {
-  font-family: Cinzel, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .has-first-color {
@@ -39,8 +40,8 @@ section {
 
 @media (max-width:991.98px) {
   .intro_sec {
-      display: block;
-      height: auto!important;
+    display: block;
+    height: auto !important;
   }
 }
 
@@ -50,10 +51,11 @@ section {
 }
 
 @media (max-width:991.98px) {
+
   .intro_sec .text,
   .intro_sec .h_bg-image {
-      padding-top: 5vh;
-      width: 100%;
+    padding-top: 5vh;
+    width: 100%;
   }
 }
 
@@ -64,22 +66,23 @@ section {
 
 @media (max-width:991.98px) {
   .intro_sec .intro {
-      max-width: 700px;
-      padding-left: 20px;
-      padding-right: 20px;
+    max-width: 700px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  #button_p{
+  #button_p {
     margin-top: 10px;
     font-weight: 700;
   }
-  #button_h{
+
+  #button_h {
     margin-top: 10px;
   }
 }
 
 .intro_sec .intro .feature .wrap-icon {
-  background: 0 0!important;
+  background: 0 0 !important;
   width: auto;
   height: auto;
   margin-bottom: 0;
@@ -105,7 +108,7 @@ section {
   background-position: center;
   min-height: 700px;
   position: relative;
-  
+
 }
 
 .ac_btn {
@@ -203,17 +206,18 @@ section {
 
 @media (max-width:991.98px) {
   .intro_sec .h_bg-image {
-      height: 600px;
-      min-height: 75vh;
-      margin-bottom: 30px;
+    height: 600px;
+    min-height: 75vh;
+    margin-bottom: 30px;
   }
+
   .intro_sec .h_bg-image .block {
-      top: unset;
-      bottom: 0;
-      width: 100%;
-      margin: 0;
-      left: 50%;
-      transform: translate(-50%, 50%);
+    top: unset;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
   }
 }
 
@@ -240,9 +244,9 @@ section {
 
 .h_bg-image {
   box-shadow:
-  inset 0.2em 2em 3em var(--bg-color),
-  0 0 0 2px var(--bg-color),
-  0.5em 1em 2em var(--bg-color-2);
+    inset 0.2em 2em 3em var(--bg-color),
+    0 0 0 2px var(--bg-color),
+    0.5em 1em 2em var(--bg-color-2);
   filter: blur(1px);
   transition: transform .8s;
 }

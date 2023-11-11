@@ -16,9 +16,7 @@ const Aboutme = () => {
             <small>I'm </small><br />
             MD. Naimur Rahman Hridoy,
             <br />
-            <small className="fs-6">a passionate web developer.</small>
-            
-            {/* from Dhaka, Bangladesh. */}
+            <small className="fs-6">a passionate programmer.</small>
           </h3>
           <br />
           <p className="fs-5" style={{ textAlign: "justify" }}>

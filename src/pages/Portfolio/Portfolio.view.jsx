@@ -12,7 +12,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     if (selected === "All") {
-      setContent(projects.map((option) => (<Project key={option.id} {...option} />)))
+      setContent(projects?.map((option) => (<Project key={option.id} {...option} />)))
     }
 
   }, [selected]);
@@ -38,13 +38,11 @@ const Portfolio = () => {
           <hr className="t_border my-2 ml-0 text-left" />
         </div>
         <div className="mb-4">
-          <Row>
+          <Row className="justify-content-start align-items-stretch">
             {content}
           </Row>
         </div>
-
       </Container>
-
     </HelmetProvider>
   );
 };
