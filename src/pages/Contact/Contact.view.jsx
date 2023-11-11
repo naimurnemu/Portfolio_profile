@@ -55,6 +55,9 @@ const Contact = () => {
             alertmessage: "Sent Successful! Thanks for your messege.",
             variant: "success",
             show: true,
+            email: "",
+            name: "",
+            message: "",
           });
         },
         (error) => {
@@ -67,16 +70,6 @@ const Contact = () => {
           document.getElementsByClassName("co_alert")[0].scrollIntoView();
         }
       );
-
-    setFormData({
-      email: "",
-      name: "",
-      message: "",
-      loading: false,
-      show: false,
-      alertmessage: "",
-      variant: "",
-    });
   };
 
   const handleChange = (e) => {
