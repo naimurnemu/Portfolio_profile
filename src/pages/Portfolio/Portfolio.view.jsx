@@ -11,8 +11,20 @@ const Portfolio = () => {
   const [content, setContent] = useState(null);
 
   useEffect(() => {
-    if (selected === "All") {
-      setContent(projects?.map((option) => (<Project key={option.id} {...option} />)))
+    if (selected === "React") {
+      setContent(projects
+        ?.filter((item) => item.filterKeys.includes("React"))
+        ?.map((option) => (<Project key={option.id} {...option} />)))
+    } else if (selected === "MERN") {
+      setContent(projects
+        ?.filter((item) => item.filterKeys.includes("MERN"))
+        ?.map((option) => (<Project key={option.id} {...option} />)))
+    } else if (selected === "Redux") {
+      setContent(projects
+        ?.filter((item) => item.filterKeys.includes("Redux"))
+        ?.map((option) => (<Project key={option.id} {...option} />)))
+    }  else {
+      setContent(projects?.map((option) => (<Project key={option.id} {...option} />)));
     }
 
   }, [selected]);
@@ -37,7 +49,7 @@ const Portfolio = () => {
           </Container>
           <hr className="t_border my-2 ml-0 text-left" />
         </div>
-        <div className="mb-4">
+        <div className="mb-5">
           <Row className="justify-content-start align-items-stretch">
             {content}
           </Row>
