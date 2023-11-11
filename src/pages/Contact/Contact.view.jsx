@@ -151,7 +151,7 @@ const Contact = () => {
                     Contact
                   </h1>
                   <div className="text-secondary ps-1">
-                    <p className="p-text pt-2"><MdEmail size={25} />&nbsp; naimurrahaman82@gmail.com</p>
+                    <p className="p-text pt-2"><MdEmail size={25} />&nbsp;naimurrahaman82@gmail.com</p>
                     <p className="p-text"><BsTelephonePlusFill size={22} />&nbsp;&nbsp; 8801401254113</p>
                   </div>
                 </div>
@@ -168,12 +168,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <Row className="mb-5 mt-3 pt-md-3">
-          <Col lg="8">
-            <h1 className="display-4 mb-4">Contact Me</h1>
-            <hr className="t_border my-4 ml-0 text-left" />
-          </Col>
-        </Row>
         <Row className="sec_sp">
           <Col lg="12">
             <Alert

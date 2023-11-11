@@ -41,7 +41,11 @@ button.btn.ac_btn:hover {
 
 .p-text{
   color: var(--text-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 
 @keyframes shift-rightwards {
   0% {
