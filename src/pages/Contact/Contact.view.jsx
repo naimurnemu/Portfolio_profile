@@ -52,7 +52,7 @@ const Contact = () => {
           console.log(result.text);
           setFormData({
             loading: false,
-            alertmessage: "SUCCESS! ,Thankyou for your messege",
+            alertmessage: "Sent Successful! Thanks for your messege.",
             variant: "success",
             show: true,
           });
