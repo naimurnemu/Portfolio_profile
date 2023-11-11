@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import { Project, SEOProvider } from '../../components';
-import { Button, Container, Nav, Row } from 'react-bootstrap';
+import { Container, Nav, Row } from 'react-bootstrap';
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import { projects } from './data';
 import "./Portfolio.css";
@@ -14,21 +14,21 @@ const Portfolio = () => {
 
   useEffect(() => {
     if (selected === "React") {
-      setContent(projects
+      setContent(projects?.sort((a, b) => b.id - a.id)
         ?.filter((item) => item.filterKeys.includes("React"))
         ?.map((option) => (<Project key={option.id} {...option} />)))
     } else if (selected === "MERN") {
-      setContent(projects
+      setContent(projects?.sort((a, b) => b.id - a.id)
         ?.filter((item) => item.filterKeys.includes("MERN"))
         ?.map((option) => (<Project key={option.id} {...option} />)))
     } else if (selected === "Redux") {
-      setContent(projects
+      setContent(projects?.sort((a, b) => b.id - a.id)
         ?.filter((item) => item.filterKeys.includes("Redux"))
         ?.map((option) => (<Project key={option.id} {...option} />)))
     } else {
-      setContent(projects?.map((option) => (<Project key={option.id} {...option} />)));
+      setContent(projects?.sort((a, b) => b.id - a.id)
+        ?.map((option) => (<Project key={option.id} {...option} />)));
     }
-
   }, [selected]);
 
   return (
@@ -36,7 +36,7 @@ const Portfolio = () => {
       <Container className="portfolio-con">
         <SEOProvider title="Portfolio" />
         <div className="pt-md-3">
-          <Container className="animate__animated animate__backInRight animate__delay-0.5s">
+          <Container className="animate__animated animate__headShake animate__delay-1s">
             <Nav className="me-auto d-flex flex-wrap">
               {buttons.map((button) => (
                 <Nav.Link

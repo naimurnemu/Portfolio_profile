@@ -6,7 +6,7 @@ const Project = (props) => {
   const { name, timeLine, githubLink, liveLink, coverURL, caption, technologies, tools, showCode, logoURL } = props || {};
   return (
     <Col xs={12} md={6} lg={4}>
-      <Card className="bg-transparent shadow_c h-full h-100">
+      <Card className="animate__animated animate__pulse bg-transparent shadow_c h-full h-100">
         <div style={{ background: `url(${coverURL})` }} className="c_bg_img">
           <div className="project_c">
             <div className="project_c_title">

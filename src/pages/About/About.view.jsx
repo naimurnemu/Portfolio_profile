@@ -17,7 +17,7 @@ const About = () => {
   console.log(pathname === "/about");
   return (
     <HelmetProvider>
-      <Container className="About-header">
+      <Container>
         <SEOProvider title="About" />
         <Row>
           <Navbar className="mt-2" fixed="top" bg="transparent" data-bs-theme="primary">

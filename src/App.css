@@ -13,7 +13,7 @@
   transition: all 400ms ease-out;
 }
 
-.page-exit {
+/* .page-exit {
   transform: translateY(0%);
   position: absolute;
   left: 0;
@@ -28,7 +28,7 @@
   top: 0;
   transform: translateY(-130%);
   transition: all 400ms ease-out;
-}
+} */
 
 @media (min-width: 1400px) {
   .container,
