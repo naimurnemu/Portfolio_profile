@@ -75,6 +75,7 @@ const Contact = () => {
       [e.target.name]: e.target.value,
     });
   };
+  
   return (
     <HelmetProvider>
       <Container>
