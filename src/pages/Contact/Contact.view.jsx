@@ -67,6 +67,16 @@ const Contact = () => {
           document.getElementsByClassName("co_alert")[0].scrollIntoView();
         }
       );
+
+    setFormData({
+      email: "",
+      name: "",
+      message: "",
+      loading: false,
+      show: false,
+      alertmessage: "",
+      variant: "",
+    });
   };
 
   const handleChange = (e) => {
@@ -75,7 +85,7 @@ const Contact = () => {
       [e.target.name]: e.target.value,
     });
   };
-  
+
   return (
     <HelmetProvider>
       <Container>
