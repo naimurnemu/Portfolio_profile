@@ -1,5 +1,5 @@
-import React from 'react';
-import { Col, Row } from 'react-bootstrap';
+import React from "react";
+import { Col, Row } from "react-bootstrap";
 import ProfilePicture from "../../../assets/photo_3112023.png"
 
 const Aboutme = () => {
@@ -13,7 +13,7 @@ const Aboutme = () => {
       <Col lg="7" className="d-flex align-items-start">
         <div>
           <h3 className="color_sec pt-5 text-center fs-2 fw-semibold">
-            <small>I'm </small><br />
+            <small>I"m </small><br />
             MD. Naimur Rahman Hridoy,
             <br />
             <small className="fs-6">a passionate programmer.</small>

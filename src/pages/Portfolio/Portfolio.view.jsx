@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { HelmetProvider } from 'react-helmet-async';
-import { Project, SEOProvider } from '../../components';
-import { Container, Nav, Row } from 'react-bootstrap';
+import React, { useEffect, useState } from "react";
+import { HelmetProvider } from "react-helmet-async";
+import { Project, SEOProvider } from "../../components";
+import { Container, Nav, Row } from "react-bootstrap";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
-import { projects } from './data';
+import { projects } from "./data";
 import "./Portfolio.css";
 
 const buttons = ["All", "React", "MERN", "Redux"]
@@ -58,8 +58,8 @@ const Portfolio = () => {
         </div>
         <div className="scroll_box">
           <button
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className='rounded-pill scroll_btn'
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="rounded-pill scroll_btn"
           >
             <BsFillArrowUpCircleFill size={35} />
           </button>

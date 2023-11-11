@@ -1,6 +1,6 @@
-import React from 'react';
-import { Col, Row } from 'react-bootstrap';
-import { skills } from '../data';
+import React from "react";
+import { Col, Row } from "react-bootstrap";
+import { skills } from "../data";
 import skillCover from "../../../assets/skill_cover.png"
 
 const Skills = () => {

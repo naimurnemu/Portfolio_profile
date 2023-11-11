@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 import "./Header.css";
-import { Link } from 'react-router-dom';
-import Lottie from 'react-lottie';
+import { Link } from "react-router-dom";
+import Lottie from "react-lottie";
 import animationData from "../../assets/fQ1Aukv8h1.json";
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from "react-bootstrap";
 
 const Menu = (props) => {
   const { handleToggle } = props || {};
@@ -13,7 +13,7 @@ const Menu = (props) => {
     autoplay: true,
     animationData: animationData,
     rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
+      preserveAspectRatio: "xMidYMid slice"
     }
   }
 
@@ -43,7 +43,7 @@ const Menu = (props) => {
               </ul>
             </Col>
             <Col xs={12} md={6}>
-              <div className='animation-container'>
+              <div className="animation-container">
                 <Lottie
                 options={lottieOptions}
                 height="50%"

@@ -1,8 +1,8 @@
-import React from 'react';
-import { Col, Row } from 'react-bootstrap';
+import React from "react";
+import { Col, Row } from "react-bootstrap";
 import acCover from "../../../assets/ac_cover.png"
-import { AcademicCard } from '../../../components';
-import { courses, qualifications } from '../data';
+import { AcademicCard } from "../../../components";
+import { courses, qualifications } from "../data";
 
 const Academic = () => {
   return (
@@ -26,7 +26,7 @@ const Academic = () => {
           <h5 className="service__title">Courses:</h5>
           <div>
             {courses.map(({ logoURL, title, institude, period }) => (
-              <Row key={logoURL} className='py-2'>
+              <Row key={logoURL} className="py-2">
                 <Col xs={2}>
                   <img
                     width="55px"

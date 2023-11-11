@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import { FiMoon } from "react-icons/fi";
 import {LuSunMoon} from "react-icons/lu"
 import "./ThemeToggle.css";
@@ -7,8 +7,8 @@ const ThemeToggle = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme"));
 
   useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
   const themetoggle = () => {

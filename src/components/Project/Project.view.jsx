@@ -1,5 +1,5 @@
-import React from 'react';
-import { Button, Card, Col } from 'react-bootstrap';
+import React from "react";
+import { Button, Card, Col } from "react-bootstrap";
 import "./Project.css";
 
 const Project = (props) => {
@@ -10,26 +10,26 @@ const Project = (props) => {
         <div style={{ background: `url(${coverURL})` }} className="c_bg_img">
           <div className="project_c">
             <div className="project_c_title">
-              <p className='fs-4 fw-medium'>{name}</p>
-              <p className='fs-6'>{timeLine}</p>
+              <p className="fs-4 fw-medium">{name}</p>
+              <p className="fs-6">{timeLine}</p>
             </div>
             <div className="content_overlay">
               <img className="overlay_img" width="100%" height="auto" src={logoURL} alt="Project_logo" />
-              <p className='fs-4 fw-medium'>{name}</p>
-              <p className='fw-medium'>{caption}</p>
+              <p className="fs-4 fw-medium">{name}</p>
+              <p className="fw-medium">{caption}</p>
               {showCode ? (
                 <div className="d-flex align-items-center justify-content-between">
                   <a target="_blank" rel="noreferrer" href={githubLink}>
                     <button className="btn btn-outline-secondary rounded-pill c_button border-2">Code</button>
                   </a>
                   <a target="_blank" rel="noreferrer" href={liveLink}>
-                    <Button className='rounded-pill c_button' variant="secondary">View Live</Button>
+                    <Button className="rounded-pill c_button" variant="secondary">View Live</Button>
                   </a>
                 </div>
               ) : (
                 <div className="text-center">
                   <a target="_blank" rel="noreferrer" href={liveLink}>
-                    <Button className='rounded-pill c_button' variant="secondary">View Live</Button>
+                    <Button className="rounded-pill c_button" variant="secondary">View Live</Button>
                   </a>
                 </div>
               )}

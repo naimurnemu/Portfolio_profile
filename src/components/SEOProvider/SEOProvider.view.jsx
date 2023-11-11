@@ -1,6 +1,6 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
-import { metaData } from './data';
+import React from "react";
+import { Helmet } from "react-helmet-async";
+import { metaData } from "./data";
 
 const SEOProvider = (props) => {
   const { title } = props || {};

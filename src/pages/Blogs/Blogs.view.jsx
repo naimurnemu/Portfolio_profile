@@ -1,8 +1,8 @@
-import React from 'react';
-import { Button } from 'react-bootstrap';
-import { HelmetProvider } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
-import { SEOProvider } from '../../components';
+import React from "react";
+import { Button } from "react-bootstrap";
+import { HelmetProvider } from "react-helmet-async";
+import { Link } from "react-router-dom";
+import { SEOProvider } from "../../components";
 
 const Blogs = () => {
   return (

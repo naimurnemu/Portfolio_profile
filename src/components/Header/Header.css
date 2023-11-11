@@ -59,7 +59,6 @@
 
 .br-top {
   top: 0;
-  /* height: 10px; */
   left: 0;
   width: 100%;
 }
@@ -67,19 +66,16 @@
 .br-bottom {
   bottom: 0;
   left: 0;
-  /* height: 10px; */
   width: 100%;
 }
 
 .br-right {
-  /* width: 10px; */
   right: 0;
   top: 0;
   height: 100%;
 }
 
 .br-left {
-  /* width: 10px; */
   left: 0;
   top: 0;
   height: 100%;

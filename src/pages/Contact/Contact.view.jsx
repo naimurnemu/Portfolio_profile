@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import emailjs from '@emailjs/browser';
-import { SEOProvider } from '../../components';
-import { HelmetProvider } from 'react-helmet-async';
-import { Alert, Button, Col, Container, Form, Row } from 'react-bootstrap';
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { SEOProvider } from "../../components";
+import { HelmetProvider } from "react-helmet-async";
+import { Alert, Button, Col, Container, Form, Row } from "react-bootstrap";
 import "./Contact.css";
 import { MdEmail } from "react-icons/md";
 import { BsTelephonePlusFill } from "react-icons/bs";
@@ -133,7 +133,7 @@ const Contact = () => {
                       autoComplete="off"
                     />
                   </Form.Group>
-                  <div className='text-end'>
+                  <div className="text-end">
                     <Button
                       type="submit"
                       variant="primary"

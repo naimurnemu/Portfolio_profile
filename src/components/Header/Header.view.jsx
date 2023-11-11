@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FiMenu } from 'react-icons/fi';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { FiMenu } from "react-icons/fi";
 import {RxExit} from "react-icons/rx";
-import ThemeToggle from '../ThemeToggle';
-import { CurrentYear, logotext } from './data';
+import ThemeToggle from "../ThemeToggle";
+import { CurrentYear, logotext } from "./data";
 import "./Header.css"
 import logo from "../../assets/portfolio_logo.png"
-import Menu from './Menu.view';
+import Menu from "./Menu.view";
 
 const Header = () => {
   const [isActive, setIsActive] = useState("false");

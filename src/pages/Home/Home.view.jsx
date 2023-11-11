@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 import "./Home.css"
-import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { SEOProvider } from '../../components';
+import { Helmet, HelmetProvider } from "react-helmet-async";
+import { SEOProvider } from "../../components";
 import Typewriter from "typewriter-effect";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <HelmetProvider>
       <section id="home" className="home">
-        <SEOProvider title="Welcome" />
+        <SEOProvider title="Home" />
         <Helmet>
           <meta charSet="utf-8" />
         </Helmet>

@@ -1,24 +1,3 @@
-export const timeline = [
-  {
-    id: "01",
-    jobtitle: "Designer of week",
-    where: "YAdfi",
-    date: "2020",
-  },
-  {
-    id: "02",
-    jobtitle: "Designer of week",
-    where: "Jamalya",
-    date: "2019",
-  },
-  {
-    id: "03",
-    jobtitle: "Designer of week",
-    where: "ALquds",
-    date: "2019",
-  },
-];
-
 export const skills = [
   {
     name: "ReactJS",
