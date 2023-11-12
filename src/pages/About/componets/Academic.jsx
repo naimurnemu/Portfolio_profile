@@ -6,7 +6,7 @@ import { courses, qualifications } from "../data";
 
 const Academic = () => {
   return (
-    <Row className="mt-5 sec_sp animate__animated animate__fadeInBottomLeft animate__delay-0.5s">
+    <Row className="mt-5 px-2 sec_sp animate__animated animate__fadeInBottomLeft animate__delay-0.5s">
       <Col lang="5">
         <h3 className="color_sec py-4">Academic & Courses</h3>
         <div className="mt-2 d-none d-md-block">

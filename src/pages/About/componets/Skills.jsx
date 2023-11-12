@@ -5,15 +5,15 @@ import skillCover from "../../../assets/skill_cover.png"
 
 const Skills = () => {
   return (
-    <Row className="mt-5 sec_sp animate__animated animate__rotateInUpLeft animate__delay-0.5s">
-      <Col lg="5">
+    <Row className="mt-5 px-2 sec_sp animate__animated animate__rotateInUpLeft animate__delay-0.5s">
+      <Col xs={12} md={5}>
         <h3 className="color_sec py-4">Skills</h3>
         <div className="mt-2 d-none d-md-block">
           <img width={"100%"} height="auto" src={skillCover} alt="skill_cover" />
         </div>
       </Col>
-      <Col lg="7">
-        {skills.map((data, i) => (
+      <Col xs={12} md={7}>
+        {skills.map((data) => (
           <div key={data.name}>
             <h3 className="progress-title">{data.name}</h3>
             <div className="progress">
