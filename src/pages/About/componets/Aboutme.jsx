@@ -10,7 +10,7 @@ const Aboutme = () => {
           <img width="100%" src={ProfilePicture} alt="Profile_Picture" />
         </div>
       </Col>
-      <Col xs={12} lg={7} className="d-flex align-items-start">
+      <Col xs={12} lg={7}>
         <div>
           <h3 className="color_sec pt-5 text-center fs-2 fw-semibold">
             <small>I"m </small><br />
