@@ -14,15 +14,13 @@ const About = () => {
     navigate(path);
   }
 
-  console.log(pathname === "/about");
   return (
     <HelmetProvider>
       <Container>
         <SEOProvider title="About" />
         <Row>
-          <Navbar className="mt-2" fixed="top" bg="transparent" data-bs-theme="primary">
-            <Container className="mt-5 animate__animated animate__bounce animate__delay-0.5s ">
-              <Nav className="me-auto mt-2 d-flex flex-wrap">
+            <Container style={{margin: "-50px 5px"}} className="mt-0">
+              <Nav className="me-auto d-flex flex-wrap animate__animated animate__bounce animate__delay-0.5s">
                 <Nav.Link
                   className={`text-primary fs-md-4 border ${pathname === "/about" ? "bg-primary text-light" : "border-primary fw-semibold"} my-1 me-3 rounded-pill px-3`}
                   onClick={() => handleNavigate("/about")}
@@ -49,11 +47,8 @@ const About = () => {
                 </Nav.Link>
               </Nav>
             </Container>
-          </Navbar>
         </Row> 
         <Outlet />
-        
-        
       </Container>
     </HelmetProvider>
   );
