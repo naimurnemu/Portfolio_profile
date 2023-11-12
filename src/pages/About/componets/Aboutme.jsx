@@ -5,12 +5,12 @@ import ProfilePicture from "../../../assets/photo_3112023.png"
 const Aboutme = () => {
   return (
     <Row className="pt-md-5 mt-5 sec_sp animate__animated animate__backInRight animate__delay-0.5s">
-      <Col lg="5">
-        <div className="border border-info mt-4 mt-sm-0 "> {/* mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0 */}
+      <Col xs={12} lg={5}>
+        <div className="border border-info mt-4 mt-sm-0 "> 
           <img width="100%" src={ProfilePicture} alt="Profile_Picture" />
         </div>
       </Col>
-      <Col lg="7" className="d-flex align-items-start">
+      <Col xs={12} lg={7} className="d-flex align-items-start">
         <div>
           <h3 className="color_sec pt-5 text-center fs-2 fw-semibold">
             <small>I"m </small><br />

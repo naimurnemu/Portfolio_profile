@@ -190,6 +190,7 @@
   text-decoration: none;
   font-family: 'PT Sans Narrow', sans-serif;
   font-family: 'Work Sans', sans-serif;
+  z-index: 5;
 }
 
 .the_menu .menu_item>a:hover {
@@ -197,7 +198,7 @@
 }
 
 .animation-container {
-  margin: 100px -250px;
+  margin: 50px -250px;
   padding: 0;
 }
 
@@ -209,7 +210,7 @@
 
 @media (max-width: 900px) {
   .animation-container {
-    margin: -200px -250px;
+    margin: -100px -250px -150px;
     padding: 0;
   }
 }

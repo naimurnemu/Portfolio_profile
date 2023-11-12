@@ -26,8 +26,8 @@ const Academic = () => {
           <h5 className="service__title">Courses:</h5>
           <div>
             {courses.map(({ logoURL, title, institude, period }) => (
-              <Row key={logoURL} className="py-2">
-                <Col xs={2}>
+              <Row key={logoURL} className="py-2 g-2">
+                <Col xs={12} sm={3} md={2}>
                   <img
                     width="55px"
                     height="55px"
@@ -35,7 +35,7 @@ const Academic = () => {
                     alt="Logo_Institude"
                   />
                 </Col>
-                <Col xs={10}>
+                <Col xs={12} sm={8} md={9}>
                   <p className="fw-bold m-0">
                     {title}
                   </p>
