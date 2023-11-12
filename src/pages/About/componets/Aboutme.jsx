@@ -4,7 +4,7 @@ import ProfilePicture from "../../../assets/photo_3112023.png"
 
 const Aboutme = () => {
   return (
-    <Row className="pt-md-5 mt-5 sec_sp animate__animated animate__backInRight animate__delay-0.5s align-items-center">
+    <Row className="mt-2 px-2 sec_sp animate__animated animate__fadeInBottomLeft animate__delay-0.5s">
       <Col xs={12} lg={5}>
         <div className="border border-info mt-3 "> 
           <img width="100%" src={ProfilePicture} alt="Profile_Picture" />

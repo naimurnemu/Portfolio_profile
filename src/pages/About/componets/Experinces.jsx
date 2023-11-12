@@ -5,9 +5,9 @@ import expCover from "../../../assets/exp_cover.png";
 
 const Experinces = () => {
   return (
-    <Row className="mt-5 sec_sp p-2">
+    <Row className="sec_sp p-2">
       <Col xs={12} md={6}>
-        <h3 className="color_sec pt-3 py-md-5">Work Timeline</h3>
+        <h3 className="color_sec">Work Timeline</h3>
         <div className="mt-2 d-none d-md-block">
           <img width={"100%"} height="auto" src={expCover} alt="exp_cover" />
         </div>
@@ -18,6 +18,7 @@ const Experinces = () => {
             <Col xs={12} md={4} lg={3}>
               <div className="mt-3">
                 <img
+                style={{borderRadius: "1rem"}}
                   width="100px"
                   height="100px"
                   src={logoURL}

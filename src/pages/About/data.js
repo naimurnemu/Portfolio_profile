@@ -1,3 +1,22 @@
+export const aboutButtons = [
+  {
+    name: "Intro", 
+    route: "/about"
+  },
+  {
+    name: "Academics", 
+    route: "/about/academic"
+  },
+  {
+    name: "Skills", 
+    route: "/about/skills"
+  },
+  {
+    name: "Experinces", 
+    route: "/about/experinces"
+  },
+];
+
 export const skills = [
   {
     name: "ReactJS",

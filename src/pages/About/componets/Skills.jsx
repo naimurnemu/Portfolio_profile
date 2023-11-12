@@ -5,7 +5,7 @@ import skillCover from "../../../assets/skill_cover.png"
 
 const Skills = () => {
   return (
-    <Row className="mt-5 px-2 sec_sp animate__animated animate__rotateInUpLeft animate__delay-0.5s">
+    <Row className="px-2 sec_sp animate__animated animate__rotateInUpLeft animate__delay-0.5s">
       <Col xs={12} md={5}>
         <h3 className="color_sec py-4">Skills</h3>
         <div className="mt-2 d-none d-md-block">

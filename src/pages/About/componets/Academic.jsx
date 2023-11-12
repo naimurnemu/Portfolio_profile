@@ -6,14 +6,14 @@ import { courses, qualifications } from "../data";
 
 const Academic = () => {
   return (
-    <Row className="mt-5 px-2 sec_sp animate__animated animate__fadeInBottomLeft animate__delay-0.5s">
-      <Col lang="5">
+    <Row className="mt-2 px-2 sec_sp animate__animated animate__fadeInBottomLeft animate__delay-0.5s">
+      <Col xs={12} lg="5">
         <h3 className="color_sec py-4">Academic & Courses</h3>
         <div className="mt-2 d-none d-md-block">
           <img width={"100%"} height="auto" src={acCover} alt="Academics_cover" />
         </div>
       </Col>
-      <Col lg="7">
+      <Col  xs={12} lg="7">
         <div className="pt-4" >
           <h5 className="service__title">Academic Qualification:</h5>
           <div>
