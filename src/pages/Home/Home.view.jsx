@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css"
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { SEOProvider } from "../../components";
+import { Roadmap, SEOProvider } from "../../components";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
 
@@ -37,7 +37,7 @@ const Home = () => {
                   Passionate about cutting-edge, pixel-perfect, beautiful UI and intuitively implemented UX.
                 </p>
                 <div className="intro_btn-action pb-5">
-                  <a href="./resume.pdf" download="Naimur's Resume.pdf">
+                  <a href="./Naimur.pdf" download="Naimur.pdf">
                     <div id="button_p" className="ac_btn btn">
                       Download Resume
                       <div className="ring one"></div>
@@ -57,10 +57,13 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div
+          {/* <div
             className="h_bg-image order-2 order-lg-2 h-100 "
             style={{ backgroundImage: `url("https://i.ibb.co/TttMy9R/cover-light.jpg")` }}
-          />
+          /> */}
+          <div className="order-2 order-lg-2 h-100">
+            {/* <Roadmap /> */}
+          </div>
         </div>
       </section>
     </HelmetProvider>
