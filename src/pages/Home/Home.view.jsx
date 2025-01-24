@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css"
+import "./Home.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Roadmap, SEOProvider } from "../../components";
 import Typewriter from "typewriter-effect";
@@ -8,23 +8,28 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <HelmetProvider>
-      <section id="home" className="home">
+      <section id="home" className="home position-relative">
         <SEOProvider title="Home" />
         <Helmet>
           <meta charSet="utf-8" />
         </Helmet>
-        <div className="intro_sec d-block d-lg-flex align-items-center ">
-          <div className="text order-1 order-lg-1 h-100 d-lg-flex justify-content-center">
-            <div className="align-self-center ">
+        <div className="intro_sec d-block d-lg-flex align-items-center">
+          <div className="text order-1 order-lg-1 h-100 d-lg-flex justify-content-center ">
+            <div className="align-self-center custom-class">
               <div className="intro mx-auto">
-                <h2 className="mb-1x">I’m known as <br />Naimur Rahman</h2>
+                <h2 className="mb-1x">
+                  I'm known as <br />
+                  Naimur Rahman
+                </h2>
                 <h4 className="fluidz-48 mb-1x mt-2 mb-4 text-warning">
                   <Typewriter
                     options={{
                       strings: [
-                        "JavaScript Programmer",
-                        "Front-End Engineer",
-                        "MERN Stack Developer",
+                        "JavaScript Developer",
+                        "React & Next.js Specialist",
+                        "MERN Stack Engineer",
+                        "C++ & Python Programmer",
+                        "Backend Developer with Django",
                       ],
                       autoStart: true,
                       loop: true,
@@ -32,10 +37,16 @@ const Home = () => {
                     }}
                   />
                 </h4>
+
                 <p style={{ textAlign: "justify" }} className="mb-1x mb-5">
-                  Experiences in developing various types of single-page applications with responsive and scalable designs also ensuring optimal performance.<br />
-                  Passionate about cutting-edge, pixel-perfect, beautiful UI and intuitively implemented UX.
+                  Experienced in developing efficient single-page applications
+                  with responsive, scalable designs, and optimized performance.
+                  <br />
+                  Skilled in JavaScript, React, Next.js, MERN stack, Python,
+                  C++, and Django. Passionate about creating elegant,
+                  data-driven solutions and clean backend architecture.
                 </p>
+
                 <div className="intro_btn-action pb-5">
                   <a href="./Naimur.pdf" download="Naimur.pdf">
                     <div id="button_p" className="ac_btn btn">
@@ -57,12 +68,17 @@ const Home = () => {
               </div>
             </div>
           </div>
-          {/* <div
-            className="h_bg-image order-2 order-lg-2 h-100 "
-            style={{ backgroundImage: `url("https://i.ibb.co/TttMy9R/cover-light.jpg")` }}
-          /> */}
-          <div className="order-2 order-lg-2 h-100">
-            {/* <Roadmap /> */}
+          <div className="order-2 order-lg-2 h-75 flex-grow-1 justify-content-center px-5 ">
+            <div className="text-start text-lg-center">
+              <h2>Journey of Growth Unfolds</h2>
+              <div className="text-center">
+                <div className="scroll-indicator">
+                  <div className="scroll-text">Scroll to see more</div>
+                  <div className="scroll-arrow">↓</div>
+                </div>
+              </div>
+            </div>
+            <Roadmap />
           </div>
         </div>
       </section>

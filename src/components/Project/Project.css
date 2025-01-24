@@ -87,4 +87,5 @@
 
 .c_button {
   color: var(--text-color) !important;
+  z-index: 100;
 }

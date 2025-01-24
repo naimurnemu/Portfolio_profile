@@ -3,42 +3,40 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { MdWork } from "react-icons/md";
+
+import "./Roadmap.css";
+import { milestones } from "./data";
 
 const Roadmap = () => {
   return (
-    <div>
-      <VerticalTimeline>
-        <VerticalTimelineElement
-          // className="vertical-timeline-element--work"
-          // contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          // contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-          date="2011 - present"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<MdWork />}
-        >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+    <div className="d-flex mx-auto mh-75 overflow-y-auto timeline-box">
+      <VerticalTimeline lineColor="var(--text-color-3)">
+        {milestones.map((milestone, index) => (
+          <VerticalTimelineElement
+            key={milestone.id}
+            className="vertical-timeline-element--work"
+            contentStyle={{
+              background: "var(--bg-color-2)",
+              color: "var(--text-color)",
+              border: "none",
+            }}
+            contentArrowStyle={{ borderRight: "7px solid  var(--bg-color-2)" }}
+            date={milestone.date}
+            dateClassName=""
+            iconStyle={{
+              border: "none",
+              background: "var(--bg-color)",
+              color: "#fff",
+            }}
+            icon={milestone.icon}
+          >
+           <h4 className="vertical-timeline-element-title">{milestone.title}</h4>
+          <h5 className="vertical-timeline-element-subtitle">{milestone.subtitle}</h5>
           <p>
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
+            {milestone.description}
           </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          // className="vertical-timeline-element--work"
-          date="2010 - 2011"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<MdWork />}
-        >
-          <h3 className="vertical-timeline-element-title">Art Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
-          </h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, SEO, Online
-            Marketing
-          </p>
-        </VerticalTimelineElement>
+          </VerticalTimelineElement>
+        ))}
       </VerticalTimeline>
     </div>
   );

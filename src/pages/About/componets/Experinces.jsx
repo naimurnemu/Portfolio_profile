@@ -13,7 +13,7 @@ const Experinces = () => {
         </div>
       </Col>
       <Col xs={12} md={6} className="py-1 py-md-5">
-        {experinces.map(({ company, logoURL, position, timeline, jobType, desciption }) => (
+        {experinces.map(({ company, logoURL, position, timeline, jobType, description }) => (
           <Row className="mt-md-4 service__title" key={logoURL}>
             <Col xs={12} md={4} lg={3}>
               <div className="mt-3">
@@ -39,7 +39,7 @@ const Experinces = () => {
                 </small>
                 <p style={{ textAlign: "justify" }}>
                   <small className="fw-light">
-                    {desciption}
+                    {description}
                   </small>
                 </p>
               </div>

@@ -6,6 +6,7 @@
   --text-color: #fff;
   --text-color-2: #40404090;
   --text-color-3: rgb(204, 0, 0);
+  --text-color-4: rgb(210, 194, 194);
   --overlay-color: rgba(0, 0, 0, 0.42);
 }
 
@@ -17,6 +18,7 @@
   --text-color: #000;
   --text-color-2: #ffffff71;
   --text-color-3: rgb(204, 0, 0);
+  --text-color-4: rgb(116, 95, 95);
   --overlay-color: rgba(255, 255, 255, 0.386);
 }
 

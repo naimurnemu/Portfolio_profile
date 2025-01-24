@@ -1,0 +1,63 @@
+.timeline-box {
+  width: 100%;
+  /* height: 75vh; */
+}
+
+.vertical-timeline::before {
+  width: 3.5px;
+  background: var(--text-color-3);
+  padding-top: 0 !important;
+}
+
+.vertical-timeline{
+  width: 100%;
+  padding-top: 0 !important;
+  margin-top: 2rem !important;
+}
+
+.vertical-timeline-element--work {
+  border: none;
+  outline: none;
+}
+
+.vertical-timeline-element-subtitle {
+  color: var(--text-color-4);
+}
+
+.vertical-timeline-element-content.bounce-in {
+  visibility: visible;
+  animation: bounce-in 0.6s;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: none;
+}
+
+.vertical-timeline * {
+  box-sizing: border-box;
+}
+
+.vertical-timeline-element-date {
+  display: inline-block;
+  background-color: (text-color-2);
+  font-size: 0.8rem;
+  margin: 0 1rem;
+  
+}
+
+.vertical-timeline-element-icon {
+  background-color: var(--text-color-3);
+}
+
+.vertical-timeline-element-content-arrow {
+  border-right: 7px solid var(--text-color-3);
+}
+
+.vertical-timeline-element-icon.shadow-size-small {
+ 
+  box-shadow: 0px 0px 4px 1px var(--text-color-3), inset 0 0px 0 var(--bg-color-2), 0 0px 0 1px var(--bg-color-2);
+}
+
+
+
+

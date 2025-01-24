@@ -255,3 +255,14 @@ section {
   filter: saturate(0.5);
   transform: scale(1.05);
 }
+
+.custom-class {
+  align-self: center;  
+  position: static;  
+}
+
+@media (min-width: 768px) {  
+  .custom-class {
+    position: fixed;  
+  }
+}

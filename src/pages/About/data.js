@@ -1,18 +1,18 @@
 export const aboutButtons = [
   {
-    name: "Intro", 
+    name: "Intro",
     route: "/about"
   },
   {
-    name: "Academics", 
+    name: "Academics",
     route: "/about/academic"
   },
   {
-    name: "Skills", 
+    name: "Skills",
     route: "/about/skills"
   },
   {
-    name: "Experinces", 
+    name: "Experinces",
     route: "/about/experinces"
   },
 ];
@@ -36,21 +36,38 @@ export const skills = [
   },
   {
     name: "NodeJS",
-    value: 60,
+    value: 70,
   },
   {
     name: "NextJS",
-    value: 45,
+    value: 70,
   },
   {
     name: "TypeScript",
-    value: 30,
+    value: 60,
   },
   {
     name: "MongoDB",
-    value: 40,
+    value: 50,
+  },
+  {
+    name: "Python",
+    value: 65,
+  },
+  {
+    name: "C++",
+    value: 60,
+  },
+  {
+    name: "Django",
+    value: 50,
+  },
+  {
+    name: "SQL",
+    value: 65,
   },
 ];
+
 
 export const qualifications = [
   {
@@ -93,13 +110,23 @@ export const courses = [
 
 export const experinces = [
   {
+    logoURL: "https://i.ibb.co.com/w7k7Hxq/manak-night.jpg",
+    company: "Manaknight Digital Inc.",
+    position: "Web Application Developer",
+    timeline: "Jan 2024 - Nov 2024",
+    jobType: "Full-time",
+    location: "Toronto, Ontario, Canada",
+    description: "Contributed to AI-driven development, integrating AI templates to create one-click applications. Worked on the enterprise-level application Bassbrand, leveraging React and TreeQL for seamless, dynamic user experiences. Focused on AI integration to streamline application functionality and improve performance."
+
+  },
+  {
     logoURL: "https://i.ibb.co/W5vqhsC/medlink-jobs-logo.jpg",
-    company: "MedLink Jobs",
+    company: "MedLink Healthcare Private Limited",
     position: "Software Engineer",
-    timeline: "Feb 2022 - Present",
+    timeline: "Feb 2022 - Dec 2023",
     jobType: "Full-time",
     location: "Hyderabad, Telangana, India",
-    desciption: "Enhancing healthcare recruiting at MedLink Jobs, I contribute as a software engineer, enhancing user experience and data security while streamlining the recruiting process. MUI, GraphQL, and React.js have been my tools in this dynamic role since February 2022.",
+    description: "Enhancing healthcare recruiting at MedLink Jobs, I contribute as a software engineer, enhancing user experience and data security while streamlining the recruiting process. MUI, GraphQL, and React.js have been my tools in this dynamic role since February 2022.",
   },
   {
     logoURL: "https://i.ibb.co/d5ggQp5/engineer-s-cradle-logo.jpg",
@@ -108,6 +135,6 @@ export const experinces = [
     timeline: "Jan 2022 - March 2022",
     jobType: "Internship",
     location: "Pune, Maharashtra, India",
-    desciption: "I worked remotely as a MERN stack developer at Engineers Cradle, I learned how to find my own creativity and influence the digital experience, which left a lasting mark on the company's growth journey during my internship.",
+    description: "I worked remotely as a MERN stack developer at Engineers Cradle, I learned how to find my own creativity and influence the digital experience, which left a lasting mark on the company's growth journey during my internship.",
   },
 ]
