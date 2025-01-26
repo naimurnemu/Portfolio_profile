@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
-import { RxExit } from "react-icons/rx";
+// import { RxExit } from "react-icons/rx";
 import ThemeToggle from "../ThemeToggle";
 import { CurrentYear, logotext } from "./data";
 import "./Header.css";
 import logo from "../../assets/Naimur_logo.png";
 import Menu from "./Menu.view";
+import { GiCrossMark } from "react-icons/gi";
 
 const Header = () => {
   const [isActive, setIsActive] = useState("false");
@@ -31,7 +32,7 @@ const Header = () => {
           <div className="d-flex align-items-center">
             <ThemeToggle />
             <button className="menu__button  nav_ac" onClick={handleToggle}>
-              {!isActive ? <RxExit /> : <FiMenu />}
+              {!isActive ? <GiCrossMark /> : <FiMenu />}
             </button>
           </div>
         </div>
