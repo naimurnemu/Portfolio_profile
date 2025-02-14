@@ -48,7 +48,7 @@ const Home = () => {
                 </p>
 
                 <div className="intro_btn-action pb-5">
-                  <a href="./Naimur.pdf" download="Naimur.pdf">
+                  <a href="./Naimur_resume.pdf" download="Naimur_resume.pdf">
                     <div id="button_p" className="ac_btn btn">
                       Download Resume
                       <div className="ring one"></div>
