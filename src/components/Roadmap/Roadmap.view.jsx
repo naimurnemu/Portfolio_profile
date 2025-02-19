@@ -26,15 +26,17 @@ const Roadmap = () => {
             iconStyle={{
               border: "none",
               background: "var(--bg-color)",
-              color: "#fff",
+              color: "var(--text-color)",
             }}
             icon={milestone.icon}
           >
-           <h4 className="vertical-timeline-element-title">{milestone.title}</h4>
-          <h5 className="vertical-timeline-element-subtitle">{milestone.subtitle}</h5>
-          <p>
-            {milestone.description}
-          </p>
+            <h4 className="vertical-timeline-element-title">
+              {milestone.title}
+            </h4>
+            <h5 className="vertical-timeline-element-subtitle">
+              {milestone.subtitle}
+            </h5>
+            <p>{milestone.description}</p>
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
