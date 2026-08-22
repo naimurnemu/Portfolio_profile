@@ -1,7 +1,7 @@
 {
   "name": "naimurs-portfolio",
   "author": "naimur_rahman",
-  "version": "0.1.0",
+  "version": "2.1.0",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
