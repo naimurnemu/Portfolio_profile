@@ -6,7 +6,7 @@ const Aboutme = () => {
   return (
     <Row className="mt-2 px-2 sec_sp animate__animated animate__fadeInBottomLeft animate__delay-0.5s">
       <Col xs={12} lg={5}>
-        <div className="border border-info mt-3 ">
+        <div className="border border-info mt-3">
           <img
             width="100%"
             src={"https://i.ibb.co.com/XsRGFnv/Naimur.png"}
@@ -14,6 +14,7 @@ const Aboutme = () => {
           />
         </div>
       </Col>
+
       <Col xs={12} lg={7}>
         <div>
           <h3 className="color_sec text-center fs-2 fw-semibold">
@@ -21,26 +22,34 @@ const Aboutme = () => {
             <br />
             MD. Naimur Rahman Hridoy,
             <br />
-            <small className="fs-6">a passionate programmer.</small>
+            <small className="fs-6">
+              a Frontend Software Engineer.
+            </small>
           </h3>
+
           <br />
+
           <p className="fs-5" style={{ textAlign: "justify" }}>
-            With a strong background in front-end development, I specialize in
-            JavaScript, ReactJS, Next.js, and CSS, building intuitive,
-            high-performance user interfaces. My experience has taught me how to
-            create seamless, responsive designs that work across all devices.
+            I build web products from the ground up, with React, Next.js, and
+            TypeScript as my primary tools. With 4+ years of experience, I
+            focus on building maintainable frontend systems, improving
+            performance, and turning complex requirements into practical,
+            reliable solutions.
             <br />
             <br />
-            While front-end development is my primary focus, I’ve expanded my
-            skills into backend technologies, particularly Python and Django.
-            I’ve worked on server-side logic, database management, and API
-            integration, continually improving my understanding of clean,
-            efficient code and testing practices.
+            Frontend is my specialization, but my curiosity goes deeper than
+            the framework. I have developed a strong foundation in programming,
+            object-oriented design, data structures, algorithms, and computer
+            science fundamentals while exploring how operating systems,
+            networking, compilers, and computer architecture work beneath the
+            abstractions.
             <br />
             <br />
-            My journey in both front-end and backend development has equipped me
-            to build well-rounded, robust applications, with a focus on solving
-            real problems and delivering reliable, scalable solutions.
+            I enjoy understanding problems from the root, making thoughtful
+            technical decisions, and working with engineering, product, sales,
+            and marketing teams to turn ideas into useful products. I’m
+            continuously expanding toward software architecture, system
+            design, and the deeper layers of modern software engineering.
           </p>
         </div>
       </Col>
