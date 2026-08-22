@@ -25,7 +25,7 @@ const AnimatedRoutes = withRouter(({ location }) => (
           <Route index element={<Aboutme />} />
           <Route path="academic" element={<Academic />} />
           <Route path="skills" element={<Skills />} />
-          <Route path="experinces" element={<Experinces />} />
+          <Route path="experiences" element={<Experinces />} />
         </Route>
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />

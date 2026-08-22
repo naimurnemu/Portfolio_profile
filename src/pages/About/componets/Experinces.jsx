@@ -22,7 +22,7 @@ const Experinces = () => {
                   width="100px"
                   height="100px"
                   src={logoURL}
-                  alt="Logo_Academy"
+                  alt="Logo_Experince Company"
                 />
               </div>
             </Col>

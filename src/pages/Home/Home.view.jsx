@@ -14,22 +14,23 @@ const Home = () => {
           <meta charSet="utf-8" />
         </Helmet>
         <div className="intro_sec d-block d-lg-flex align-items-center">
-          <div className="text order-1 order-lg-1 h-100 d-lg-flex justify-content-center ">
+          <div className="text order-1 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center custom-class">
               <div className="intro mx-auto">
                 <h2 className="mb-1x">
-                  I'm known as <br />
-                  Naimur Rahman
+                  I’m Naimur <br />
+                  Rahman
                 </h2>
+
                 <h4 className="fluidz-48 mb-1x mt-2 mb-4 text-warning">
                   <Typewriter
                     options={{
                       strings: [
-                        "JavaScript Developer",
-                        "React & Next.js Specialist",
-                        "MERN Stack Engineer",
-                        "C++ & Python Programmer",
-                        "Backend Developer with Django",
+                        "Frontend Software Engineer",
+                        "React & Next.js Engineer",
+                        "TypeScript Developer",
+                        "Software Engineer at Heart",
+                        "Computer Science Enthusiast",
                       ],
                       autoStart: true,
                       loop: true,
@@ -39,16 +40,18 @@ const Home = () => {
                 </h4>
 
                 <p style={{ textAlign: "justify" }} className="mb-1x mb-5">
-                  Experienced in developing efficient single-page applications
-                  with responsive, scalable designs, and optimized performance.
-                  <br />
-                  Skilled in JavaScript, React, Next.js, MERN stack, Python,
-                  C++, and Django. Passionate about creating elegant,
-                  data-driven solutions and clean backend architecture.
+                  I build web products from the ground up, combining strong frontend
+                  engineering with a deeper understanding of how software works beneath
+                  the surface. I enjoy turning complex problems into simple, scalable
+                  solutions—and continuously exploring what lies beyond the next
+                  abstraction.
                 </p>
 
                 <div className="intro_btn-action pb-5">
-                  <a href="./resume.pdf" download="Naimur Rahman - Resume.pdf">
+                  <a
+                    href="./resume.pdf"
+                    download="naimur_rahman_frontend_resume.pdf"
+                  >
                     <div id="button_p" className="ac_btn btn">
                       Download Resume
                       <div className="ring one"></div>
@@ -56,6 +59,7 @@ const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </a>
+
                   <Link to="/contact">
                     <div id="button_h" className="ac_btn btn">
                       Contact Me
